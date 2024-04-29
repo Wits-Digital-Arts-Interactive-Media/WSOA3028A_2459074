@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Attach an event listener to the window.onload event
+window.onload = function() {
     // Function to create and append navigation elements
     function createNavigation() {
         const nav = document.getElementById('navList');
@@ -24,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Call createNavigation function when DOM is loaded
+    // Call createNavigation function when the window is fully loaded
     createNavigation();
-});
+};
