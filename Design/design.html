@@ -9,30 +9,23 @@
         content="website design, wireframes, goal alignment, information structure, user flow, interface elements">
     <meta name="author" content="Mark Daniel Lasco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./Scripts/menu.js"></script>
-    
-       
+    <script src="./Scripts/menu.js" type="module"></script>
+    <script type="module">
+        import { initialise } from "./Scripts/menu.js";
+        initialise("Design");
     </script>
     <title>Design Process</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul id="navList"></ul>
-            <!-- Navigation will be added dynamically here -->
-        </nav>
-    </header>
-
-<body>
     <h1>Design Process</h1>
     <h2>Page Designs</h2>
     <ul>
-        <li><a href="/Design/pagedesigns.html">Page Designs</a></li>
+        <li><a href="pagedesigns.html">Page Designs</a></li>
     </ul>
     <h2>Website Wireframes UI</h2>
-    <img src="./Images/Website Wireframe Homepage.jpg" alt="Wireframe" width="500">
-    <img src="./Images/Website Wireframe Portfolio page.jpg" alt="Wireframe" width="500">
+    <img src="../Images/Website Wireframe Homepage.jpg" alt="Wireframe" width="500">
+    <img src="../Images/Website Wireframe Portfolio page.jpg" alt="Wireframe" width="500">
 
     <h2>Goal Alignment</h2>
     <p>My goal:</p>
@@ -53,18 +46,18 @@
     </ul>
 
     <h2>Information Structure</h2>
-    <img src="./Images/Info structure for website.jpg" alt="Info Structure" width="500">
+    <img src="../Images/Info structure for website.jpg" alt="Info Structure" width="500">
 
     <h2>User Flow</h2>
-    <img src="./Images/User Flow.jpg" alt="User Flow" width="500">
+    <img src="../Images/User Flow.jpg" alt="User Flow" width="500">
 
     <h2>Interface Elements</h2>
-    <img src="./Images/Interface Element Homepage.jpg" alt="Homepage" width="300">
-    <img src="./Images/Interface Element Bio.jpg" alt="Bio" width="300">
-    <img src="./Images/Interface Elements Portfolio.jpg" alt="Portfolio" width="300">
-    <img src="./Images/Interface Elements Blogs.jpg" alt="Blogs" width="300">
-    <img src="./Images/Interactive Elements Essays.jpg" alt="Essays" width="300">
-    <img src="./Images/Interface Element Design.jpg" alt="Design" width="300">
+    <img src="../Images/Interface Element Homepage.jpg" alt="Homepage" width="300">
+    <img src="../Images/Interface Element Bio.jpg" alt="Bio" width="300">
+    <img src="../Images/Interface Elements Portfolio.jpg" alt="Portfolio" width="300">
+    <img src="../Images/Interface Elements Blogs.jpg" alt="Blogs" width="300">
+    <img src="../Images/Interactive Elements Essays.jpg" alt="Essays" width="300">
+    <img src="../Images/Interface Element Design.jpg" alt="Design" width="300">
 
 </body>
 
