@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Weekly Blog Posts - A collection of weekly blog posts documenting various topics.">
+    <meta name="description"
+        content="Weekly Blog Posts - A collection of weekly blog posts documenting various topics.">
     <meta name="keywords" content="blog, weekly, posts, HTML, web development">
     <meta name="author" content="Mark Daniel Lasco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Scripts/menu.js" type="module"></script>
+    <script type="module">
+        import { initialise } from "./Scripts/menu.js";
+        initialise("Blogs");
+    </script>
     <title>Weekly Blog Posts</title>
 </head>
+
 <body>
     <h1>Weekly Blog Posts</h1>
     <nav>
@@ -23,4 +31,5 @@
         </ul>
     </nav>
 </body>
+
 </html>
