@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('domloaded');
     // Function to create and append navigation elements
     function createNavigation() {
         const nav = document.getElementById('navList');
