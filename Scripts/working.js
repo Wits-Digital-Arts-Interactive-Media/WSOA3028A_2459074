@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: "Home", href: "index.html" },
             { text: "Blog", href: "Blogs/blog.html" },
             { text: "Essays", href: "Essays/essays.html" },
-            { text: "Portfolio", href: "Portfolio/portfolio.html" },
+            { text: "Portfolio", href: "../Portfolio/portfolio.html" },
             { text: "Design", href: "Design/design.html" },
             { text: "About", href: "aboutme.html" }
         ];
@@ -21,13 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             a.href = item.href;
             li.appendChild(a);
             nav.appendChild(li);
-            
-            a.addEventListener('mouseover', () => {
-                a.style.fontSize = '1.2em';
-            });
-            a.addEventListener('mouseout', () => {
-                a.style.fontSize = '1em';
-            });
         });
     }
 
