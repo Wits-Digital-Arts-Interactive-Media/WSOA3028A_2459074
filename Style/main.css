@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: 'CocoGoose';
-    src: url(/Fonts/Cocogoose-Pro-Light-trial.ttf);
+    font-family: 'Supreme';
+    src: url(/Fonts/Supreme-Variable.ttf);
 }
 
 header {
@@ -9,7 +9,7 @@ header {
     align-items: center; 
     justify-content: space-between; 
     padding: 10px; 
-    font-family: "CocoGoose";
+    font-family: "Supreme";
     color: #FFFFFF;
 }
 
