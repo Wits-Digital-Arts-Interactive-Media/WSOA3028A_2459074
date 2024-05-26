@@ -4,9 +4,9 @@ const menuItems = [
     {name: "Home", href: root + "/index.html"},
     {name: "Blogs", href: `${root}/Blogs/blog.html`},
     {name: "Essays", href: `${root}/Essays/essays.html`},
-    {name: "Portfolio", href:`${root}/Portofolio/portfolio.html`},
+    {name: "Portfolio", href:`${root}/Portfolio/portfolio.html`},
     {name: "Design", href: `${root}/Design/design.html`},
-    {name: "About", href: `${root}/about.html`},
+    {name: "About", href: `${root}/aboutme.html`},
 
 ];
 
