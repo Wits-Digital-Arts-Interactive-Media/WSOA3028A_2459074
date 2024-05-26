@@ -1,37 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('domloaded');
-    // Function to create and append navigation elements
-    function createNavigation() {
-        const nav = document.getElementById('navList');
-        
-        // Define navigation items
-        const navItems = [
-            { text: "Home", href: "index.html" },
-            { text: "Blog", href: "blog.html" },
-            { text: "Essays", href: "Essays/essays.html" },
-            { text: "Portfolio", href: "Portfolio/portfolio.html" },
-            { text: "Design", href: "Design/design.html" },
-            { text: "About", href: "aboutme.html" }
-        ];
+const root = "/WSOA3028A_2459074"
 
-        // Create and append navigation elements
-        navItems.forEach(item => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.textContent = item.text;
-            a.href = item.href;
-            li.appendChild(a);
-            nav.appendChild(li);
-            
-            a.addEventListener('mouseover', () => {
-                a.style.fontSize = '1.2em';
-            });
-            a.addEventListener('mouseout', () => {
-                a.style.fontSize = '1em';
-            });
-        });
+const menuItems = [
+    {name: "Home", href: root + "/index.html"},
+    {name: "Blogs", href: `${root}/Blogs/blog.html`},
+    {name: "Essays", href: `${root}/Essays/essays.html`},
+    {name: "Portfolio", href:`${root}/Portoflio/portfolio.html`},
+    {name: "Design", href: `${root}/Design/design.html`},
+    {name: "About", href: `${root}/About/about.html`},
+
+];
+
+
+export function initialise(currentPage){
+    const nav = document.querySelector("header > nav")      //this will make sure the nav element is selcected within each html document
+    const ul = document.createElement("ul")
+    for(let menuItem of menuItems){                         //iterates over each menu item in menuItems array
+        const li = document.createElement("li")              //Within each iteration a list element is made for each item
+        if(currentPage != menuItem.name){                     //Condition to check if currentPage name does not match menu item name
+            const a = document.createElement("a")            // if its true, an anchor element is made for each menu item
+            a.innerText = menuItem.name                     // sets the text content of anchor to the menu item name
+            a.setAttribute("href", menuItem.href)           // sets the href attribute to the corresponding to URL
+            li.appendChild(a)
+        }else{
+            li.innerText = menuItem.name
+        }
+        ul.appendChild(li)
     }
-
-    // Call createNavigation function when DOM is loaded
-    createNavigation();
-});
+    nav.appendChild(ul)
+}
