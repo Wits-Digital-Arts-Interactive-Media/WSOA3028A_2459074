@@ -64,3 +64,17 @@ header h1:hover {
     
 }
 
+h2 {
+    display: flex; 
+    padding: 10px; 
+    font-family: "Alpine", sans-serif;
+    color: #FFFFFF;
+}
+
+p{
+    display: flex; 
+    padding: 10px; 
+    font-family: "Alpine", sans-serif;
+    color: #FFFFFF;
+}
+
