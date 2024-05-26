@@ -8,18 +8,28 @@
     <meta name="keywords" content="blog, weekly, posts, HTML, web development">
     <meta name="author" content="Mark Daniel Lasco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./Scripts/menu.js" type="module"></script>
+    <script src="/Scripts/menu.js" type="module"></script>
     <script type="module">
-        import { initialise } from "./Scripts/menu.js";
+        import { initialise } from "/Scripts/menu.js";
         initialise("Blog");
     </script>
     <title>Weekly Blog Posts</title>
+    <link rel="stylesheet" href="/Style/main.css" />
 </head>
 
 
 
 <body>
     <h1>Weekly Blog Posts</h1>
+    <header>
+        <h1>LasContent</h1>
+        <nav>
+            <ul id="navList"></ul>
+            <!-- Navigation will be added dynamically here -->
+        </nav>
+    </header>
+   
+
     <nav>
         <ul>
             <li><a href="week1.html">Week 1</a></li>
@@ -36,6 +46,8 @@
     
         </ul>
     </nav>
+
+    
 </body>
 
 </html>
