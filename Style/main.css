@@ -76,6 +76,7 @@ p{
     padding: 10px; 
     font-family: "Alpine", sans-serif;
     color: #FFFFFF;
+    font-size: large;
 }
 
 h3{
@@ -89,4 +90,23 @@ h3{
     font-family: "Alpine", sans-serif;
     color: #FFFFFF;
     
+}
+
+.centered-text {
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Set maximum width for the text */
+    padding: 20px; /* Add some padding for better readability */
+    background-color: #fff; /* Add a background color for the container */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+#Bros{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
