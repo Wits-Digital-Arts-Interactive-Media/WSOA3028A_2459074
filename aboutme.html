@@ -12,31 +12,90 @@
         import { initialise } from "./Scripts/menu.js";
         initialise("About");
     </script>
-
     <script src="./Scripts/menu.js" type="module"></script>
-
     <link rel="stylesheet" href="./Style/main.css" />
-
-    <title>About Me</title>
+    <title>About.</title>
 </head>
 
-<body>
+<body id="About">
     <header>
         <h1>LasContent</h1>
-
-        <nav>
-
-        </nav>
+        <nav></nav>
     </header>
 
-    <h2>About Me</h2>
-    <h2>Mark Daniel Lasco</h2>
-    <P>As you can see on the top, my name is Mark Daniel Lasco. I am one of the few asian kids in class and one
-        of the best FIFA players in the world. I am 21 years old and really into video games. I am also really
-        into fashion and would easily say I am one of the best dressed in class. If you don't believe me here is
-        my <a href="https://www.instagram.com/yunglasco/">instagram</a></P>
+    <p id="AboutName" class="text-change"><span class="suffix"> 2459074</span></p>
+    <p id="AboutTitle" class="text-change"><span class="suffix"> Student</span></p>
 
-    <img src="./Images/Screenshot 2024-03-18 001637.png" alt="Hanfsome Guy" width="500">
+    <img id="Daddy" src="./Images/Papa.jpeg" alt="Handsome Guy" width="500">
+
+    <p id="AboutInfo">"Well done is better than well said." - Benjamin Franklin.</p>
+
+    <p id="AboutInfo2">The above quote is something I read awhile ago, and is something I have kept with me ever since. Whenever dealing with a task, I always try to do it the best I can and I like to do a lot of tasks, as you can see by the many names and titles I have receieved in doing so.</p>
+
+    <p id="AboutInfo3">But yeah, thats a little bit of background information about me. My name is Mark Daniel Lasco. I am currently and 3rd-year student in Digital Arts, majoring in Game Design and Interactive Media.</p>
+
+    <p id="Copyright">Carefully fabricated by | Mark Daniel Lasco | © 2024</p>
+
+
+    <!--Please dont penalize me for this one it doesnt work for some reason when I put it into my menu.js script ;(-->
+
+    <script>
+        const suffixesAboutName = [
+            "Mark Daniel Lasco",
+            "Danz",
+            "Danzinho",
+            "Lasco",
+            "Daexhin",
+            "Danzo",
+            "This one is a Chinese",
+            "2459074"
+        ];
+        let indexAboutName = 0;
+
+        function changeSuffixAboutName() {
+            const aboutNameElement = document.getElementById('AboutName');
+            const suffixElement = aboutNameElement.querySelector('.suffix');
+            const newSuffix = suffixesAboutName[indexAboutName];
+
+            suffixElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                suffixElement.textContent = newSuffix;
+                suffixElement.classList.remove('fade-out');
+                indexAboutName = (indexAboutName + 1) % suffixesAboutName.length;
+            }, 1000);
+        }
+
+        setInterval(changeSuffixAboutName, 4000);
+
+        const suffixesAboutTitle = [
+            "Developer",
+            "Designer",
+            "Centre-back",
+            "Artist",
+            "Gamer",
+            "Icon",
+            "Comedian",
+            "Student"
+        ];
+        let indexAboutTitle = 0;
+
+        function changeSuffixAboutTitle() {
+            const aboutTitleElement = document.getElementById('AboutTitle');
+            const suffixElement = aboutTitleElement.querySelector('.suffix');
+            const newSuffix = suffixesAboutTitle[indexAboutTitle];
+
+            suffixElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                suffixElement.textContent = newSuffix;
+                suffixElement.classList.remove('fade-out');
+                indexAboutTitle = (indexAboutTitle + 1) % suffixesAboutTitle.length;
+            }, 1000);
+        }
+
+        setInterval(changeSuffixAboutTitle, 4000);
+    </script>
 </body>
 
 </html>

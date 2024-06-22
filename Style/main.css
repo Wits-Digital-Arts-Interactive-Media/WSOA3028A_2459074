@@ -1,112 +1,376 @@
+/*Fancy Tings*/
 
 @font-face {
     font-family: 'Alpine';
-    src: url(../Fonts/Alpino-Variable.ttf);
+    src: url(../Fonts/GeneralSans-Semibold.otf);
 }
+
+@keyframes colorChange {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+
+    100% {
+        color: #022ddc;
+    }
+}
+
+/*NAV BAR*/
 
 header {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px; 
+    align-items: center;
+    justify-content: space-between;
     font-family: "Alpine", sans-serif;
-    color: #FFFFFF;
+    color: #000000;
+    border-bottom: 3px solid #022ddc;
+
 }
 
+.section {
+    height: 100vh;
+    transition: background-color 1s ease;
+
+}
+
+.blue-section {
+    height: 70vh;
+    background-color: #022ddc;
+    color: white;
+    display: flex;
+    /* Ensure this is here */
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin-left: 53px;
+}
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
-    margin: 0; 
-    display: flex; 
+    margin-right: 20px;
+    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 nav ul li a {
-    text-decoration: none; 
-    color: #FFFFFF; 
-    font-size: 1em; 
+    text-decoration: none;
+    color: #000000;
+    font-size: 1em;
     font-weight: bold;
-    transition: font-size 0.2s; 
+    transition: font-size 0.2s;
 }
 
 nav ul li a:hover {
-    font-size: 1.4em; 
-    
+    font-size: 1.4em;
+    color: #022ddc;
+
 }
 
-body{
-    background-color:#1A2980;
-    background : -webkit-linear-gradient(
-        to right,
-        #26d0ce , 
-        #1a2980
-    );
-    background: linear-gradient(
-        to right, 
-        #26d0ce , 
-        #1a2980
-    );
+body {
+    background-color: #e5e5e5;
+
     font-family: "Alpine", sans-serif;
-    
+    margin: 0;
+
+
 }
 
 header h1:hover {
-    font-size: 2em; 
-    
+    font-size: 2em;
+
 }
+
+/*CONTENT*/
 
 h2 {
-    display: flex; 
-    padding: 10px; 
-    font-family: "Alpine", sans-serif;
-    color: #FFFFFF;
-}
-
-p{
-    display: flex; 
-    padding: 10px; 
-    font-family: "Alpine", sans-serif;
-    color: #FFFFFF;
-    font-size: large;
-}
-
-h3{
-    display: flex; 
-    padding: 10px; 
-    font-family: "Alpine", sans-serif;
-    color: #FFFFFF;
-}
-
-#Bums{
-    font-family: "Alpine", sans-serif;
-    color: #FFFFFF;
-    
-}
-
-.centered-text {
-    text-align: left; /* Align text to the left */
-    max-width: 600px; /* Set maximum width for the text */
-    padding: 20px; /* Add some padding for better readability */
-    background-color: #fff; /* Add a background color for the container */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-}
-
-#Bros{
-    height: 100%;
-    margin: 0;
     display: flex;
+    padding: 10px;
+    font-family: "Alpine", sans-serif;
+    color: #022ddc;
+    margin-left: 45px;
+    margin-bottom: 5px;
+}
+
+p {
+    display: flex;
+    padding: 10px;
+    font-family: "Alpine", sans-serif;
+    color: #000000;
+    font-size: large;
+    margin-left: 50px;
+    width: 1300px;
+}
+
+h3 {
+    display: flex;
+    padding: 10px;
+    font-family: "Alpine", sans-serif;
+    color: #022ddc;
+    margin-left: 45px;
+}
+
+#Bums {
+    font-family: "Alpine", sans-serif;
+    color: #050607;
+    margin-left: 45px;
+
+}
+
+
+#Welcome {
+    margin-left: 57px;
+    font-size: 24px;
+    animation: colorChange 5s infinite alternate;
+}
+
+#Copyright {
+    margin-top: 50px;
     justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    bottom: 0;
+}
+
+/*HOME PAGE*/
+
+#HomeInfo {
+    width: 500px;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+#coolio {
+    margin-left: 57px;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: -175px;
+    position: relative;
+    position: relative;
+    top: 150px;
+
+}
+
+#Lasco {
+    font-family: "Alpine", sans-serif;
+    color: #022ddc;
+    font-size: 125px;
+    margin-left: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+
+}
+
+.text-change {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.suffix {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/*BLOG PAGE*/
+
+#BlogList {
+    position: relative;
+    left: 800px;
+    top: 50px;
+    width: 500px;
+
+}
+
+#BlogHeader {
+    position: absolute;
+    font-size: 125px;
+    margin-left: 50px;
+    top: 250px;
+    color: #022ddc;
+}
+
+
+
+.BlogLink a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid #022ddc;
+    width: 400px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+}
+
+.BlogLink a:visited {
+    color: #000000;
+}
+
+.BlogLink a:hover {
+    color: #022ddc;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+#INSPO {
+    margin-left: 55PX;
+}
+
+li a {
+    color: #022ddc;
+}
+
+img {
+    margin-left: 60px;
+}
+
+/*ESSAY PAGE*/
+
+#EssayList {
+    position: relative;
+    left: 800px;
+    top: 210px;
+    width: 500px;
+}
+
+.EssayLink a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid #022ddc;
+    width: 400px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+}
+
+.EssayLink a:visited {
+    color: #000000;
+}
+
+.EssayLink a:hover {
+    color: #022ddc;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+#secretsauce {
+    margin: 200px;
+}
+
+/*ABOUT PAGE*/
+
+#Daddy {
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 850px;
+    bottom: -600px;
+    width: 600px;
+    margin: 0;
+}
+
+#AboutName {
+    margin-left: 57px;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: -175px;
+    position: relative;
+    position: relative;
+    top: 150px;
+
+}
+
+#AboutTitle {
+    font-family: "Alpine", sans-serif;
+    color: #022ddc;
+    font-size: 125px;
+    margin-left: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+
+}
+
+#AboutInfo {
+    margin-left: 57px;
+    width: 800px;
+    margin-top: 200px;
+}
+
+#AboutInfo2 {
+    margin-left: 57px;
+    width: 800px;
+
+}
+
+#AboutInfo3 {
+    margin-left: 57px;
+    width: 800px;
+    margin-bottom: 450px;
+
+}
+
+/*PORTFOLIO PAGE*/
+
+.PortLink a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid #022ddc;
+    width: 400px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+}
+
+.PortLink a:visited {
+    color: #000000;
+}
+
+.PortLink a:hover {
+
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.PortLink1 a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 3px solid #022ddc;
+    width: 400px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+}
+
+.PortLink1 a:visited {
+    color: #000000;
+}
+
+
+.PortLink1 a:hover {
+
+    color: #ff244c;
+    text-decoration: none;
+    font-size: 2.5em;
 }

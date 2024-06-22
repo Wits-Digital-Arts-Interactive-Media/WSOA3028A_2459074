@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore the portfolio of Mark Daniel, showcasing his work, blogs, essays, designs, and personal information.">
+    <meta name="description"
+        content="Explore the portfolio of Mark Daniel, showcasing his work, blogs, essays, designs, and personal information.">
     <meta name="keywords" content="Mark Daniel, portfolio, blogs, essays, design, about me">
     <meta name="author" content="Mark Daniel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module">
         import { initialise } from "./Scripts/menu.js";
         initialise("Home");
-      </script>
-    
-      <script src="./Scripts/menu.js" type="module"></script>
-
-    <!--<script type="module"> -->
+    </script>
+    <script src="./Scripts/menu.js" type="module"></script>
     <link rel="stylesheet" href="./Style/main.css" />
-        
-        
     <title>Mark Daniel's Portfolio</title>
+    
 </head>
 
 <body>
     <header>
         <h1>LasContent</h1>
-        <nav>
-            
-        </nav>
+        <nav></nav>
     </header>
 
+    <div class="section white-section">
+    <p id="coolio">This is</p>
+    <p id="Lasco" class="text-change">Las<span class="suffix">co</span></p>
+
+    <!--Please dont penalize me for this one it doesnt work for some reason when I put it into my menu.js script ;(-->
+
+    <script>
+
+        const suffixes = ["co", "Code", "Content", "Cataracts", "Courageous", "Contagious", "Corinthians"];
+        let index = 1;
+
+
+        function changeSuffix() {
+            const lascoElement = document.getElementById('Lasco');
+            const suffixElement = lascoElement.querySelector('.suffix');
+            const newSuffix = suffixes[index];
+
+
+            suffixElement.classList.add('fade-out');
+
+
+            setTimeout(() => {
+                suffixElement.textContent = newSuffix;
+                suffixElement.classList.remove('fade-out');
+                index = (index + 1) % suffixes.length;
+            }, 1000);
+        }
+
+
+        setInterval(changeSuffix, 4000);
+    </script>
+    
+    
+    </div>
+
+    <div class="section blue-section">
+        <p id="HomeInfo">Welcome to my website, this is where I keep everything Digital Arts related, mostly Interactive Media since this was an assignment. Feel free to explore my stuff.</p>
+    </div>
 
     
-        <p>Welcome to my website, it looks a bit bummy right now, but it'll get better soon.</p>
-        <p>Watch this space.</p>
-        <p>Trust the process.</p>
-    
+<p id="Copyright">Carefully fabricated by | Mark Daniel Lasco | © 2024</p>
 
 
 </body>
+
 </html>

@@ -28,3 +28,4 @@ window.onload = function() {
     // Call createNavigation function when the window is fully loaded
     createNavigation();
 };
+
