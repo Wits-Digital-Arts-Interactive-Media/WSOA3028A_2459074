@@ -17,6 +17,44 @@
 
 /*NAV BAR*/
 
+#nav-buttons {
+
+    text-align: center;
+    margin: 20px;
+}
+
+
+#next-button {
+    border: none;
+    background: none;
+}
+
+
+#next-button a {
+    background: none;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Alpine', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#next-buttom a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+#next-button a:hover {
+    color: #022ddc;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
 header {
     display: flex;
     align-items: center;
@@ -110,7 +148,7 @@ p {
     color: #000000;
     font-size: large;
     margin-left: 50px;
-    width: 1300px;
+
 }
 
 h3 {
@@ -171,6 +209,16 @@ h3 {
 
 }
 
+#Yur{
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 865px;
+    bottom: -170px;
+    width: 609px;
+    margin: 0;
+    filter: grayscale();
+}
+
 .text-change {
     font-size: 24px;
     font-weight: bold;
@@ -197,14 +245,14 @@ h3 {
 
 }
 
-#BlogHeader {
+p#BlogHeader {
     position: absolute;
     font-size: 125px;
     margin-left: 50px;
     top: 250px;
     color: #022ddc;
+    width: 400px;
 }
-
 
 
 .BlogLink a {
