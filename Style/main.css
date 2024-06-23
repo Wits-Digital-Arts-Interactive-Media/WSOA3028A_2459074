@@ -460,6 +460,10 @@ img {
         margin: 5px;
     }
 
+    h3{
+        margin: 5px;
+    }
+
     nav ul{
         margin: 10px;
     }
@@ -470,6 +474,7 @@ img {
 
     p {
         margin: 0px;
+        
     }
 
     #AboutName {
