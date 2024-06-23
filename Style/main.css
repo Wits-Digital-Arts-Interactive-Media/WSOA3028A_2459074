@@ -422,7 +422,7 @@ img {
     font-size: 2.5em;
 }
 
-@media (max-width: 470px) {
+@media only screen and (max-width: 470px) {
 
     #coolio {
         margin-left: 50px;
@@ -554,5 +554,61 @@ img {
     img {
         width: 300px;
         margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 768px){
+
+    #coolio {
+       font-size: 50px;
+       top: 225px;
+       left: -10px;
+
+    }
+
+    #Lasco {
+        top: 375px;
+
+        font-size: 80px;
+
+    }
+
+    p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #BlogList{
+        position: relative;
+        left: 10px;
+        top: 450px;
+        width: 300px;
+    }
+
+    #EssayList{
+        position: relative;
+        left: 10px;
+        top: 450px;
+        width: 300px;
+    }
+
+    #secretsauce{
+        margin: 300px;
+    }
+
+    #AboutInfo,
+    #AboutInfo2,
+    #AboutInfo3 {
+        
+        width: 600px;
+    }
+
+    #Daddy {
+        position: relative;
+        left: 200px;
+        width: 350px;
+        bottom: -100px;
+        margin: 0;
+
     }
 }
